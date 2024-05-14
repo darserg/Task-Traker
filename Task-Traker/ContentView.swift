@@ -9,15 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            VStack{
+                NavigationLink(destination: ContentView()) {
+                    Text("Main page").font(.largeTitle)
+                }
+                Text("+ new page").font(.largeTitle)
+                Spacer()
+                NavigationLink(destination: SettingsCV()) {
+                    Text("Preferences").font(.largeTitle)
+                }
+                Spacer()
+            }
         }
-        .padding()
+        VStack {
+            HStack{
+                Collumn(CollumnName: "ToDo", Color1: .blue).getCollunm()
+                }.padding(10)
+            }
+        }
     }
-}
 
 #Preview {
     ContentView()
