@@ -18,6 +18,6 @@ struct TaskDragable : View {
     var body : some View {
         VStack{
             Text(TaskName).colorInvert().font(.title)
-        }.frame(width: Extentions.DeviceWidth * 7 / 8, height: Extentions.DeviceHeight / 12)
+        }.frame(width: Extentions.DeviceWidth * 4 / 25, height: Extentions.DeviceHeight / 12)
     }
 }
