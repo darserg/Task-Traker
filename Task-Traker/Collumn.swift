@@ -8,25 +8,26 @@
 import Foundation
 import SwiftUI
 
-class Collumn {
-    public var CollumnName: String
-    public var Color1 : UIColor
-    
-    init () {
-        CollumnName = "Untitled"
-        Color1 = .gray
-    }
-    
-    init (CollumnName: String, Color1 : UIColor) {
+struct Collumn : View {
+    var CollumnName : String
+    var Tasks : [String]
+    init(CollumnName: String, Tasks: [String]) {
         self.CollumnName = CollumnName
-        self.Color1 = Color1
+        self.Tasks = Tasks
     }
     
-    public func getCollunm() -> some View {
-
-        var body: some View{
-            Text(CollumnName).colorInvert().frame(width: Extentions.DeviceWidth / 5, height: Extentions.DeviceHeight / 10)
-        }
-        return body
+    init(CollumnName: String) {
+        self.CollumnName = CollumnName
+        self.Tasks = ["Sample 1",  "Sample 2"]
+    }
+    
+    var body: some View {
+        VStack{
+            Text(CollumnName).colorInvert().font(.largeTitle).padding(10)
+            ForEach (Tasks, id: \.self) { task in
+                TaskDragable(TaskName: task).body.padding(5).background(.blue)
+            }
+            Spacer()
+        }.frame(width: Extentions.DeviceWidth / 5, height: Extentions.DeviceHeight / 2)
     }
 }

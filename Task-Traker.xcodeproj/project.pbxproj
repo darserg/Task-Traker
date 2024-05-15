@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63487C752BF4646D0017E96B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63487C742BF4646D0017E96B /* Task.swift */; };
 		63698A452BF0C10C008BB101 /* MainTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63698A442BF0C10C008BB101 /* MainTable.swift */; };
 		63698A472BF0C1A1008BB101 /* SettingsCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63698A462BF0C1A1008BB101 /* SettingsCV.swift */; };
 		63698A492BF0C3D1008BB101 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63698A482BF0C3D1008BB101 /* Extentions.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63487C742BF4646D0017E96B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		63698A442BF0C10C008BB101 /* MainTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTable.swift; sourceTree = "<group>"; };
 		63698A462BF0C1A1008BB101 /* SettingsCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCV.swift; sourceTree = "<group>"; };
 		63698A482BF0C3D1008BB101 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 		63F125812BED15B6005AB643 = {
 			isa = PBXGroup;
 			children = (
+				63487C742BF4646D0017E96B /* Task.swift */,
 				63F1258C2BED15B6005AB643 /* Task-Traker */,
 				63F1258B2BED15B6005AB643 /* Products */,
 			);
@@ -170,6 +173,7 @@
 				63F125A32BED1902005AB643 /* Task_TrackerApp.swift in Sources */,
 				63698A492BF0C3D1008BB101 /* Extentions.swift in Sources */,
 				63698A4B2BF0DA25008BB101 /* Collumn.swift in Sources */,
+				63487C752BF4646D0017E96B /* Task.swift in Sources */,
 				63698A452BF0C10C008BB101 /* MainTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

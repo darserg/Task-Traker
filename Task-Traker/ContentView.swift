@@ -23,9 +23,12 @@ struct ContentView: View {
             }
         }
         VStack {
+            Spacer()
             HStack{
-                Collumn(CollumnName: "ToDo", Color1: .blue).getCollunm()
-                }.padding(10)
+                Collumn(CollumnName: "Todo").background(.red)
+                Collumn(CollumnName: "In progress").background(.green)
+                Collumn(CollumnName: "Done").background(.blue)
+            }.padding(10)
             }
         }
     }
